@@ -9,18 +9,25 @@
 </head>
 <body>
    <h1>Hi!</h1> 
+   <div class="visitors"></div>
+   <button class="get_visitors" type="submit" title="get_visitors">Get visitors</button>
+
    <div class="text"></div>
    HOST URL:<input type="text" class="url">
    <button class="send" type="submit" title="Search">Send</button>
    <br>Send a message
    <input type="text" class="message">
-   
-   <!-- <button class="sendPost" type="submit" title="Search">Send</button> -->
-   <script id="hosts-template" type="text/x-handlebars-template">
-    {{#each hosts}} 
+   <script id="visitors-template" type="text/x-handlebars-template">
+    {{#each visitors}} 
     <p>Name: {{name}} - Text: {{text}}  </p>
     {{/each}}
     </script>
+   <!-- <button class="sendPost" type="submit" title="Search">Send</button> -->
+   <!-- <script id="hosts-template" type="text/x-handlebars-template">
+    {{#each hosts}} 
+    <p>Name: {{name}} - Text: {{text}}  </p>
+    {{/each}}
+    </script> -->
     <script src="/jquery/dist/jquery.min.js"></script>
      <script src="/handlebars/dist/handlebars.min.js"></script>
     <script src="main.js"></script>
